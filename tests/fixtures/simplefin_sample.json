@@ -1,0 +1,21 @@
+{
+  "errlist": [],
+  "connections": [
+    {"conn_id": "CON-1", "name": "Demo Bank", "org_id": "ORG-1", "org_name": "Demo Bank",
+     "org_url": "https://demobank.example", "sfin_url": "https://bridge.example/simplefin"}
+  ],
+  "accounts": [
+    {
+      "id": "ACT-1", "name": "Checking", "conn_id": "CON-1", "currency": "USD",
+      "balance": "1234.56", "available-balance": "1200.00", "balance-date": 1790000000,
+      "holdings": [],
+      "transactions": [
+        {"id": "TRN-1", "posted": 1789900000, "transacted_at": 1789890000, "amount": "-12.34",
+         "description": "COFFEE SHOP #12", "payee": "Coffee Shop", "memo": "", "mcc": "5814", "pending": false},
+        {"id": "TRN-2", "posted": 0, "amount": "-45.00", "description": "GROCERY PENDING",
+         "payee": "Grocery", "memo": "", "pending": true},
+        {"id": "TRN-3", "posted": 1789800000, "amount": "2500.00", "description": "PAYROLL DEPOSIT", "pending": false}
+      ]
+    }
+  ]
+}
