@@ -1,6 +1,11 @@
-from budget_buckets import main
+import pytest
+
+from budget_buckets.cli import main
 
 
-def test_main_prints_greeting(capsys):
-    main()
-    assert "budget-buckets" in capsys.readouterr().out
+def test_cli_help_lists_commands(capsys):
+    with pytest.raises(SystemExit):
+        main(["--help"])
+    out = capsys.readouterr().out
+    assert "pull" in out
+    assert "show" in out
