@@ -1,7 +1,7 @@
 [project]
 name = "budget-buckets"
 version = "0.1.0"
-description = "Add your description here"
+description = "Daily transaction bucketing with a push digest and budget dashboard"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
